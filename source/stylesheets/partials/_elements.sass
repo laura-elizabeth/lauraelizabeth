@@ -20,14 +20,28 @@ h2
 
 a
   &:link, &:visited, &:active, &:hover, &:focus
-    font-weight: 700
+    font-weight: 400
     text-decoration: none
     +transition(all 0.1s ease-in)
 
 p
+  font-size: 16px
+  line-height: 30px
+  color: #6B6661
+  a
+    &:link, &:visited, &:active, &:hover, &:focus
+      color: #979797
+      border-bottom: 1px dashed #979797
+      padding-bottom: 4px
   &.intro
     font-size: 18px
     line-height: 32px
+    color: #979797
+    a
+      &:link, &:visited, &:active, &:hover, &:focus
+        color: #6B6661
+        border-bottom: 1px dashed #6B6661
+        padding-bottom: 4px
 
 img
   max-width: 100%
