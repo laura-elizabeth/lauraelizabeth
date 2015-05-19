@@ -1,2 +1,26 @@
 body > footer
-  width: 100%
+	width: 100%
+	.footer-content
+		border-top: 1px dashed #6B6661
+		padding: 48px 0 63px
+		float: left
+		.footer-avatar
+			float: left
+			margin-right: 20px
+			img
+				width: 140px
+		.footer-about
+			max-width: 459px
+			float: left
+			p
+				font-size: 18px
+				line-height: 32px
+				color: #979797
+				margin: 0 0 15px
+				&:last-child
+					margin-bottom: 0
+				a
+					&:link, &:visited, &:active, &:hover, &:focus
+						color: #6B6661
+						border-bottom: 1px dashed #6B6661
+						padding-bottom: 4px
