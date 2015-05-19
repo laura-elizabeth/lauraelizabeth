@@ -1,0 +1,42 @@
+*
+  box-sizing: border-box
+  &:after, &:before
+    box-sizing: border-box
+
+body
+  -webkit-text-size-adjust: none
+  height: 100%
+  border-top: 6px solid #CCA608
+  border-bottom: 6px solid #CCA608
+
+h1
+  font-size: 32px
+  line-height: 44px
+  font-weight: 300
+  span
+    color: #CCA608
+
+h2
+
+a
+  &:link, &:visited, &:active, &:hover, &:focus
+    font-weight: 700
+    text-decoration: none
+    +transition(all 0.1s ease-in)
+
+p
+  &.intro
+    font-size: 18px
+    line-height: 32px
+
+section
+  padding: 30px 0
+  +min-width(768px)
+    padding: 70px 0
+
+img
+  max-width: 100%
+  height: auto
+
+ul
+  list-style: none
