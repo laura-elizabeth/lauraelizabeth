@@ -1,7 +1,8 @@
 body > footer
 	width: 100%
+	margin-top: 46px
 	.footer-content
-		border-top: 1px dashed #6B6661
+		border-top: 1px dashed $footer-border-top
 		padding: 48px 0 63px
 		float: left
 		.footer-avatar
@@ -15,12 +16,12 @@ body > footer
 			p
 				font-size: 18px
 				line-height: 32px
-				color: #979797
+				color: $footer-p
 				margin: 0 0 15px
 				&:last-child
 					margin-bottom: 0
 				a
 					&:link, &:visited, &:active, &:hover, &:focus
-						color: #6B6661
-						border-bottom: 1px dashed #6B6661
+						color: $footer-p-link
+						border-bottom: 1px dashed $footer-p-link
 						padding-bottom: 4px

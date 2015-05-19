@@ -6,17 +6,16 @@
 body
   -webkit-text-size-adjust: none
   height: 100%
-  border-top: 6px solid #CCA608
-  border-bottom: 6px solid #CCA608
+  border: solid $body-border
+  border-width: 6px 0 6px 0
 
 h1
   font-size: 32px
   line-height: 44px
   font-weight: 300
+  margin: 0 0 20px
   span
-    color: #CCA608
-
-h2
+    color: $h1-span
 
 a
   &:link, &:visited, &:active, &:hover, &:focus
@@ -27,20 +26,20 @@ a
 p
   font-size: 16px
   line-height: 30px
-  color: #6B6661
+  margin: 0 0 15px
   a
     &:link, &:visited, &:active, &:hover, &:focus
-      color: #979797
-      border-bottom: 1px dashed #979797
+      color: $p-link
+      border-bottom: 1px dashed $p-link
       padding-bottom: 4px
   &.intro
     font-size: 18px
     line-height: 32px
-    color: #979797
+    color: $p-intro
     a
       &:link, &:visited, &:active, &:hover, &:focus
-        color: #6B6661
-        border-bottom: 1px dashed #6B6661
+        color: $p-intro-link
+        border-bottom: 1px dashed $p-intro-link
         padding-bottom: 4px
 
 q
@@ -48,16 +47,15 @@ q
   font-style: italic
   font-size: 20px
   line-height: 34px
-  color: #CCA608
+  color: $quote
+  display: block
+  margin: 25px 0 38px
   &:before, &:after
     content: ""
 
 img
   max-width: 100%
   height: auto
-  &.signature
-    display: block
-    margin: 43px 0 46px
 
 ul
   list-style: none
