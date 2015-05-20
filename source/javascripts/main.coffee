@@ -1,6 +1,7 @@
 #= require "jquery"
 #= require "vendor/bootstrap-custom"
 #= require "vendor/jribbble"
+#= require "vendor/retina.min"
 
 $(document).ready ->
 	initDribbbleFeed()
