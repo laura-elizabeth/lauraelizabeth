@@ -22,6 +22,11 @@ h2
   line-height: 37px
   font-weight: 700
 
+h3
+  font-size: 24px
+  line-height: 37px
+  font-weight: 700
+
 h5
   font-size: 18px
   line-height: 32px
@@ -65,6 +70,21 @@ em
 strong
   font-weight: 700
 
+small
+  &.author
+    font-family: "Merriweather Sans", sans-serif
+    font-size: 12px
+    line-height: 30px
+    font-weight: 700
+  &.date
+    font-size: 10px
+    line-height: 20px
+    letter-spacing: 0.77px
+    color: $small-date
+    span
+      color: $small-date-span
+      text-transform: uppercase
+
 q
   font-weight: 300
   font-style: italic
@@ -78,7 +98,7 @@ blockquote
   font-size: 20px
   line-height: 37px
   font-weight: 700
-  border-left: 3px solid #CCA608
+  border-left: 3px solid $blockquote-border-left
   margin: 10px 0
   padding-left: 30px
 
@@ -94,3 +114,10 @@ ul
     span
       color: #6b6661
       line-height: 30px
+
+body.writing
+  ul
+    list-style-type: none
+    padding: 0
+    li
+      color: #6b6661
