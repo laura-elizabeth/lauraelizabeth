@@ -1,0 +1,33 @@
+input
+  &:focus
+    outline: 0
+
+form
+  input
+    font-family: "Merriweather", sans-serif
+    background-color: #fff
+    height: 56px
+    border-radius: 3px
+    text-indent: 20px
+    font-size: 15px
+    border: 1px solid #C7C7C7
+    +appearance(none)
+    box-sizing: border-box
+    &.name
+      width: 218px
+      margin-right: 19px
+    &.email
+      width: 378px
+    &.button
+      height: 58px
+      border: 0
+      border-radius: 29px
+      background-color: #CCA608
+      color: #fff
+      margin: 20px auto 0
+      width: 305px
+      text-indent: 0
+      display: block
+      &:hover
+        background-color: #DBC052
+        +transition(all 0.1s ease-in)
