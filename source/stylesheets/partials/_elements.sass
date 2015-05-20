@@ -71,19 +71,11 @@ strong
   font-weight: 700
 
 small
-  &.author
+  &.quote-author
     font-family: "Merriweather Sans", sans-serif
     font-size: 12px
     line-height: 30px
     font-weight: 700
-  &.date
-    font-size: 10px
-    line-height: 20px
-    letter-spacing: 0.77px
-    color: $small-date
-    span
-      color: $small-date-span
-      text-transform: uppercase
 
 q
   font-weight: 300
@@ -114,10 +106,19 @@ ul
     span
       color: #6b6661
       line-height: 30px
-
-body.writing
-  ul
+  &.articles
     list-style-type: none
     padding: 0
     li
       color: #6b6661
+      border-bottom: 1px dashed #6B6661
+      small
+        font-size: 10px
+        line-height: 20px
+        letter-spacing: 0.77px
+        color: $article-date
+        span
+          color: $article-date-span
+          text-transform: uppercase
+      &:last-child
+        border-bottom: 0
