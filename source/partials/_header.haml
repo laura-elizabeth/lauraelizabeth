@@ -8,12 +8,12 @@
         %nav
           %ul
             %li
-              %a{href: "/design"} Design
+              %a{href: "/design", class: page_classes.include?("design") ? "selected" : ""} Design
             %li
-              %a{href: "/writing"} Writing
+              %a{href: "/writing", class: page_classes.include?("writing") ? "selected" : ""} Writing
             %li
-              %a{href: "/case-studies"} Case Studies
+              %a{href: "/case-studies", class: page_classes.include?("case-studies") ? "selected" : ""} Case Studies
             %li
-              %a{href: "/newsletter"} Newsletter
+              %a{href: "/newsletter", class: page_classes.include?("newsletter") ? "selected" : ""} Newsletter
             %li
-              %a{href: "/contact"} Contact Me
+              %a{href: "/contact", class: page_classes.include?("contact") ? "selected" : ""} Contact Me
