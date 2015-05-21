@@ -10,7 +10,7 @@ form
     border-radius: 3px
     text-indent: 20px
     font-size: 15px
-    border: 1px solid #C7C7C7
+    border: 1px solid $form-input-border
     +appearance(none)
     box-sizing: border-box
     &.name
@@ -22,12 +22,12 @@ form
       height: 58px
       border: 0
       border-radius: 29px
-      background-color: #CCA608
-      color: #fff
+      background-color: $button-bg
+      color: $button-text
       margin: 20px auto 0
       width: 305px
       text-indent: 0
       display: block
       &:hover
-        background-color: #DBC052
+        background-color: $button-bg-hover
         +transition(all 0.1s ease-in)
