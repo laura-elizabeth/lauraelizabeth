@@ -64,18 +64,17 @@ p
     color: $p-emphasis
     margin: 25px 0 38px
 
-em
-  font-style: italic
-
-strong
-  font-weight: 700
-
 small
+  &.caption
+    font-size: 10px
+    line-height: 17px
+    font-style: italic
+    color: $caption
   &.quote-author
     font-family: "Merriweather Sans", sans-serif
     font-size: 12px
     line-height: 30px
-    font-weight: 700
+    font-weight: 700s
 
 q
   font-weight: 300
@@ -90,7 +89,7 @@ blockquote
   font-size: 20px
   line-height: 37px
   font-weight: 700
-  border-left: 3px solid $blockquote-border-left
+  border-left: 3px solid $blockquote-border
   margin: 10px 0
   padding-left: 30px
 
