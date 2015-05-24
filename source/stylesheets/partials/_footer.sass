@@ -1,8 +1,9 @@
-body > footer
+body
+  > footer
   width: 100%
   .footer-content
     border-top: 1px dashed $footer-border
-    padding: 48px 0 63px
+    padding: 50px 0 60px
     float: left
     .footer-avatar
       float: left
@@ -25,3 +26,15 @@ body > footer
             color: $footer-p-link
             border-bottom: 1px dashed $footer-p-link
             padding-bottom: 4px
+  &.index
+    > footer
+      margin-top: 45px
+  &.design, &.newsletter, &.contact
+    > footer
+      margin-top: 40px
+  &.writing
+    > footer
+      margin-top: 60px
+  &.case-studies
+    > footer
+      margin-top: 20px
