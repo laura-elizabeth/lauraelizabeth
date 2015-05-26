@@ -1,49 +1,60 @@
-section
-  &.individual-case-study-header
-    width: 100%
-    height: 400px
-    margin: 50px 0 70px
-    &.kiwijar
-      background: center center no-repeat image-url("case-studies/kiwijar/kiwijar-header.png")
-      +at2x("/images/case-studies/kiwijar/kiwijar-header", png, 2000px, 400px)
-      background-size: cover
+.individual-case-study
+  h1
+    padding-bottom: 40px
+    margin-bottom: 40px
+    border-bottom: 1px solid #D8D8D8
 
-  &.individual-case-study-contact
-    background-color: #6B6661
-    text-align: center
-    margin-top: 70px
-    padding: 60px 0
-    p
-      font-size: 32px
-      line-height: 44px
-      font-weight: 300
-      display: block
-      color: #fff
-      margin: 0 0 20px
-    a
-      &:link, &:visited, &:active, &:hover, &:focus
-        color: $case-study-link
-        border-bottom: 1px dashed $case-study-border
-        padding-bottom: 4px
+  section
+    &.individual-case-study-header
+      width: 100%
+      height: 400px
+      margin: 50px 0 70px
+      &.kiwijar
+        background: center center no-repeat image-url("case-studies/kiwijar/kiwijar-header.png")
+        +at2x("/images/case-studies/kiwijar/kiwijar-header", png, 2000px, 400px)
+        background-size: cover
 
-  &.individual-case-study-next
-    background-color: #F8F8F8
-    padding: 60px 0
-    img
-      border: 1px solid #D8D8D8
-    small.project-header
-      margin-top: 10px
-      display: block
+    &.individual-case-study-caption
+      width: 100%
+      margin: 30px 0
+      background-color: #FDFDFD
+
+    &.individual-case-study-contact
+      background-color: #6B6661
+      text-align: center
+      margin-top: 70px
+      padding: 60px 0
+      p
+        font-size: 32px
+        line-height: 44px
+        font-weight: 300
+        display: block
+        color: #fff
+        margin: 0 0 20px
+      a
+        &:link, &:visited, &:active, &:hover, &:focus
+          color: $case-study-link
+          border-bottom: 1px dashed $case-study-border
+          padding-bottom: 4px
+
+    &.individual-case-study-next
+      background-color: #F8F8F8
+      padding: 60px 0
+      img
+        border: 1px solid #D8D8D8
+      small.project-header
+        margin-top: 10px
+        display: block
+      p
+        margin-top: 0
+        &.emphasis
+          margin: 0
+
+  .individual-case-study-project
+    margin-top: 15px
+    border-bottom: 1px dashed #bbbbbb
     p
       margin-top: 0
-      &.emphasis
-        margin: 0
-
-.individual-case-study-project
-  margin-top: 15px
-  border-bottom: 1px dashed #bbbbbb
-  p
-    margin-top: 0
-    font-size: 10px
-    line-height: 17px
-    letter-spacing: 0.77px
+      font-size: 10px
+      line-height: 17px
+      letter-spacing: 0.77px
