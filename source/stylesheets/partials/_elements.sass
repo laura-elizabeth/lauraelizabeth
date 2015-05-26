@@ -36,7 +36,7 @@ a
   &:link, &:visited, &:active, &:hover, &:focus
     font-weight: 400
     text-decoration: none
-    color: #6b6661
+    color: $link
     +transition(all 0.1s ease-in)
 
 p
@@ -83,7 +83,7 @@ small
     font-size: 10px
     line-height: 20px
     font-weight: 700
-    color: $case-study-title
+    color: $project-header
     text-transform: uppercase
     letter-spacing: 1px
 
@@ -136,12 +136,12 @@ section
   &.page-section-large
     margin-top: 30px
   &.image-light-background
-    background-color: #fdfdfd
+    background-color: $bg-light
     margin: 30px 0
   &.newsletter-signup
     margin-top: 20px
     padding: 25px 0 40px
-    background-color: #fdfdfd
+    background-color: $bg-light
     p.emphasis
       margin-top: 0
     li:first-child
