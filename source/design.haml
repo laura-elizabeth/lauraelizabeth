@@ -114,7 +114,7 @@ priority: "1"
           *(Don't worry, you won't be signed up to a mailing list - you can find that [here](/newsletter) - and your details will not be shared with anyone. Ever.)*
 
           Then I'll get you to fill in your very own Project Planner which will help me get to know you, your business and mostly importantly you goals and we can schedule a one-on-one session to delve a bit deeper and get the process started!
-        %form
-          %input.required.name{name: "FNAME", placeholder: "Your first name", type: "text", value: ""}/
-          %input.required.email{name: "EMAIL", placeholder: "Your best email address", type: "email", value: ""}/
+        %form.drip_form
+          %input.required.first_name{placeholder: "Your first name", type: "text", value: ""}/
+          %input.required.email{placeholder: "Your best email address", type: "email", value: ""}/
           %input.button{name: "subscribe", type: "submit", value: "Grab your Getting Started PDF"}/
