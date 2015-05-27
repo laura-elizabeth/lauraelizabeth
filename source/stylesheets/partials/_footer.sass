@@ -8,6 +8,8 @@ body
       .footer-avatar
         float: left
         margin-right: 20px
+        +max-width(680px)
+          margin-bottom: 30px
         img
           width: 140px
           border-radius: 50%
@@ -15,17 +17,22 @@ body
         max-width: 459px
         float: left
         p
-          font-size: 18px
-          line-height: 32px
+          font-size: 14px
+          line-height: 28px
           color: $footer-p
           margin: 0 0 15px
+          +min-width(480px)
+            font-size: 18px
+            line-height: 32px
           &:last-child
             margin-bottom: 0
           a
             &:link, &:visited, &:active
               color: $link-dark
               border-bottom: 1px dashed $link-dark
-              padding-bottom: 4px
+              padding-bottom: 2px
+              +min-width(480px)
+                padding-bottom: 4px
             &:hover, &:focus
               color: $link-dark-hover
               border-bottom: 1px dashed $link-dark-hover
