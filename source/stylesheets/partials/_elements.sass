@@ -38,10 +38,10 @@ a
   &:link, &:visited, &:active
     font-weight: 400
     text-decoration: none
-    color: $link
+    color: $link-dark
     +transition(all 0.1s ease-in)
   &:hover, &:focus
-    color: #979797
+    color: $link-dark-hover
 
 p
   font-size: 16px
@@ -49,24 +49,24 @@ p
   margin: 15px 0
   a
     &:link, &:visited, &:active
-      color: $p-link
-      border-bottom: 1px dashed $p-link
+      color: $link-light
+      border-bottom: 1px dashed $link-light
       padding-bottom: 4px
     &:hover, &:focus
-      color: #6b6661
-      border-bottom: 1px dashed #6b6661
+      color: $link-light-hover
+      border-bottom: 1px dashed $link-light-hover
   &.intro
     font-size: 18px
     line-height: 32px
     color: $p-intro
     a
       &:link, &:visited, &:active
-        color: $p-intro-link
-        border-bottom: 1px dashed $p-intro-link
+        color: $link-dark
+        border-bottom: 1px dashed $link-dark
         padding-bottom: 4px
       &:hover, &:focus
-        color: #979797
-        border-bottom: 1px dashed #979797
+        color: $link-dark-hover
+        border-bottom: 1px dashed $link-dark-hover
   &.emphasis
     font-weight: 300
     font-style: italic

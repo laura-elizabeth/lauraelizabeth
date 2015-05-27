@@ -8,9 +8,12 @@
   .case-study-details
     margin-top: 15px
     a
-      &:link, &:visited, &:active, &:hover, &:focus
-        color: $case-study-link
-        border-bottom: 1px dashed $case-study-border
+      &:link, &:visited, &:active
+        color: $link-emphasis
+        border-bottom: 1px dashed $link-emphasis
         padding-bottom: 4px
+      &:hover, &:focus
+        color: darken($link-emphasis, 10%)
+        border-bottom: 1px dashed darken($link-emphasis, 10%)
     p.emphasis
       margin: 0

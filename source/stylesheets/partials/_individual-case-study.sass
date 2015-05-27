@@ -32,10 +32,13 @@
         color: $individual-case-study-p
         margin: 0 0 20px
       a
-        &:link, &:visited, &:active, &:hover, &:focus
-          color: $case-study-link
-          border-bottom: 1px dashed $case-study-border
+        &:link, &:visited, &:active
+          color: $link-emphasis
+          border-bottom: 1px dashed $link-emphasis
           padding-bottom: 4px
+        &:hover, &:focus
+          color: lighten($link-emphasis, 10%)
+          border-bottom: 1px dashed lighten($link-emphasis, 10%)
 
     &.individual-case-study-next
       background-color: $individual-case-study-next-bg
