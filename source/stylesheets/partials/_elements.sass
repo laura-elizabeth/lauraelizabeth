@@ -59,10 +59,11 @@ a
 p
   font-size: 14px
   line-height: 28px
-  margin: 15px 0
+  margin: 10px 0
   +min-width(480px)
     font-size: 16px
     line-height: 30px
+    margin: 15px 0
   a
     &:link, &:visited, &:active
       color: $link-light
@@ -96,10 +97,11 @@ p
     font-size: 16px
     line-height: 28px
     color: $p-emphasis
-    margin: 30px 0 45px
+    margin: 15px 0 20px
     +min-width(480px)
       font-size: 20px
       line-height: 34px
+      margin: 30px 0 45px
 
 small
   &.caption
@@ -132,21 +134,23 @@ q
   line-height: 28px
   color: $quote
   display: block
-  margin: 20px 0 10px
+  margin: 15px 0 10px
   +min-width(480px)
     font-size: 20px
     line-height: 34px
+    margin-top: 20px
 
 blockquote
   font-size: 18px
   line-height: 34px
   font-weight: 700
   border-left: 3px solid $blockquote-border
-  margin: 30px 0
+  margin: 25px 0
   padding-left: 30px
   +min-width(480px)
     font-size: 20px
     line-height: 37px
+    margin: 30px 0
 
 img
   max-width: 100%
@@ -189,15 +193,23 @@ section
     margin-top: 30px
   &.image-light-background
     background-color: $bg-light
-    margin: 30px 0
+    margin: 15px 0
+    +min-width(480px)
+      margin: 30px 0
     img
       display: block
       margin: 0 auto
   &.newsletter-signup
     margin-top: 20px
-    padding: 25px 0 40px
+    padding: 25px 0 60px
     background-color: $bg-light
+    +min-width(480px)
+      padding-bottom: 40px
     p.emphasis
       margin-top: 0
+    img
+      +max-width(480px)
+        margin: 0 auto 20px
+        display: block
     li:first-child
       margin-top: 0

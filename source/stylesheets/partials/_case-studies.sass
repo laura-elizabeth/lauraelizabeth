@@ -1,5 +1,7 @@
 .case-study
-  margin: 20px 0 40px
+  margin: 20px 0 70px
+  +min-width(480px)
+    margin-bottom: 40px
   .case-study-project
     margin-top: 20px
     border-bottom: 1px dashed $case-study-project-border
@@ -7,11 +9,18 @@
       margin-top: 0
   .case-study-details
     margin-top: 15px
+    p
+      +max-width(480px)
+        margin-bottom: 30px
     a
       &:link, &:visited, &:active
+        font-size: 14px
         color: $link-emphasis
         border-bottom: 1px dashed $link-emphasis
-        padding-bottom: 4px
+        padding-bottom: 2px
+        +min-width(480px)
+          font-size: 16px
+          padding-bottom: 4px
       &:hover, &:focus
         color: darken($link-emphasis, 10%)
         border-bottom: 1px dashed darken($link-emphasis, 10%)
