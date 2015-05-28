@@ -33,9 +33,11 @@ form
       background-color: $button-bg
       color: $button-text
       margin: 30px auto 0
-      width: 305px
+      width: 100%
       text-indent: 0
       display: block
+      +min-width(480px)
+        width: 305px
       &:hover
         background-color: $button-bg-hover
         +transition(all 0.1s ease-in)
