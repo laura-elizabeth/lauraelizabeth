@@ -7,12 +7,19 @@
   section
     &.individual-case-study-header
       width: 100%
-      height: 400px
-      margin: 50px 0 70px
+      height: 320px
+      margin: 30px 0
+      +min-width(321px)
+        height: 400px
+      +min-width(480px)
+        margin: 50px 0 70px
       &.kiwijar
         background: center center no-repeat image-url("case-studies/kiwijar/kiwijar-header.png")
         +at2x("/images/case-studies/kiwijar/kiwijar-header", png, 2000px, 400px)
         background-size: cover
+        +max-width(320px)
+          background: center center no-repeat image-url("case-studies/kiwijar/kiwijar-header-mobile.png")
+          +at2x("/images/case-studies/kiwijar/kiwijar-header-mobile", png, 320px, 320px)
 
     &.individual-case-study-caption
       width: 100%
@@ -22,15 +29,20 @@
     &.individual-case-study-contact
       background-color: $individual-case-study-contact-bg
       text-align: center
-      margin-top: 70px
+      margin-top: 30px
       padding: 60px 0
+      +min-width(480px)
+        margin-top: 70px
       p
-        font-size: 32px
-        line-height: 44px
+        font-size: 24px
+        line-height: 34px
         font-weight: 300
         display: block
         color: $individual-case-study-p
         margin: 0 0 20px
+        +min-width(480px)
+          font-size: 32px
+          line-height: 44px
       a
         &:link, &:visited, &:active
           color: $link-emphasis
@@ -42,20 +54,28 @@
 
     &.individual-case-study-next
       background-color: $individual-case-study-next-bg
-      padding: 60px 0
+      padding: 30px 0
+      +min-width(480px)
+        padding: 60px 0
       img
         border: 1px solid $individual-case-study-next-img-border
       small.project-header
-        margin-top: 10px
+        margin-top: 30px
         display: block
+        +min-width(992px)
+          margin-top: 10px
       p
         margin-top: 0
+        +max-width(480px)
+          margin-bottom: 20px
         &.emphasis
           margin: 0
 
   .individual-case-study-project
-    margin-top: 15px
+    margin: 15px 0 30px
     border-bottom: 1px dashed $individual-case-study-project-border
+    +max-width(480px)
+      display: none
     p
       margin-top: 0
       font-size: 10px

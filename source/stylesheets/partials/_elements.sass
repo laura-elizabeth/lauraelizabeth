@@ -105,12 +105,14 @@ p
 
 small
   &.caption
-    margin-top: 10px
+    margin-top: 20px
     font-size: 10px
     line-height: 17px
     font-style: italic
     color: $caption
     display: inline-block
+    +min-width(992px)
+      margin-top: 10px
   &.quote-author
     font-family: "Merriweather Sans", sans-serif
     font-size: 10px
