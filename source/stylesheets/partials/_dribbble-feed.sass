@@ -1,13 +1,40 @@
 section.dribbble
-  margin: 28px 0 43px
+  margin: 20px auto
+  +min-width(480px)
+    margin: 30px auto 45px
   .shot
     img
-      width: 220px
       float: left
-      margin: 0 20px 20px 0
-    &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8)
+      width: 100%
+      margin-bottom: 20px
+    &:nth-child(3)
       img
         margin-bottom: 0
-    &:nth-child(4n)
+
+    +min-width(480px)
       img
-        margin-right: 0
+        width: calc(50% - 10px)
+      &:nth-child(odd)
+        img
+          margin-right: 20px
+      &:nth-child(n+7)
+        img
+          margin-bottom: 0
+
+    +min-width(992px)
+      img
+        width: calc(25% - 15px)
+        margin: 0 20px 20px 0
+        margin-left: 0
+      &:nth-child(n+5)
+        img
+          margin-bottom: 0
+      &:nth-child(4n)
+        img
+          margin-right: 0
+
+    // Deletes last 5 Dribbble shots on mobile
+    +max-width(480px)
+      &:nth-child(n+4)
+        img
+          display: none
