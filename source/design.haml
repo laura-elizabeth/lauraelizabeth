@@ -13,7 +13,13 @@ priority: "1"
             stand out from the crowd.
 
 %section.image-light-background
-  %img{alt: "Design work for LawGap", src: "/images/design/imac-lawgap.png"}/
+  :plain
+    <picture>
+      <!--[if IE 9]><video style="display: none;"><![endif]-->
+      <source srcset="/images/design/imac-lawgap.png, /images/design/imac-lawgap@2x.png 2x" media="(min-width: 321px)">
+      <img srcset="/images/design/imac-lawgap-mobile.png, /images/design/imac-lawgap-mobile@2x.png 2x" alt="Design work for LawGap">
+      <!--[if IE 9]></video><![endif]-->
+    </picture>
 
 %section
   .container

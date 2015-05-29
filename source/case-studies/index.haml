@@ -15,7 +15,13 @@ priority: "1"
       .row
         .col-md-6.col-md-offset-1
           %a{href: "/case-studies/kiwijar"}
-            %img{alt: "KiwiJar case study", src: "/images/case-studies/kiwijar-thumb.png"}/
+            :plain
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="/images/case-studies/kiwijar-thumb.png, /images/case-studies/kiwijar-thumb@2x.png 2x" media="(min-width: 321px)">
+                <img srcset="/images/case-studies/kiwijar-thumb-mobile.png, /images/case-studies/kiwijar-thumb-mobile@2x.png 2x" alt="KiwiJar case study">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
         .col-md-4
           .case-study-project
             %small.project-header
@@ -33,7 +39,13 @@ priority: "1"
     .case-study
       .row
         .col-md-6.col-md-offset-1
-          %img{alt: "LawGap case study", src: "/images/case-studies/lawgap-thumb.png"}/
+          :plain
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/images/case-studies/lawgap-thumb.png, /images/case-studies/lawgap-thumb@2x.png 2x" media="(min-width: 321px)">
+              <img srcset="/images/case-studies/lawgap-thumb-mobile.png, /images/case-studies/lawgap-thumb-mobile@2x.png 2x" alt="LawGap case study">
+              <!--[if IE 9]></video><![endif]-->
+            </picture>
         .col-md-4
           .case-study-project
             %small.project-header

@@ -1,5 +1,5 @@
-# Laurium Design
+# Laura Elizabeth
 
-Laurium Design website, built using [Middleman](http://middlemanapp.com).
+Laura Elizabeth's website, built using [Middleman](http://middlemanapp.com).
 
 Start server with: `middleman`

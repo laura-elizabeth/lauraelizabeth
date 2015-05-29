@@ -2,6 +2,7 @@
 #= require "vendor/bootstrap-custom"
 #= require "vendor/jribbble"
 #= require "vendor/retina.min"
+#= require "vendor/picturefill.min"
 
 $(document).ready ->
   detectMobile()
