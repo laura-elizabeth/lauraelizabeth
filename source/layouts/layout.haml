@@ -1,13 +1,13 @@
 !!!
 %html
   %head
-    %title= current_page.data.title || "Laurium Design"
+    %title= current_page.data.title || "Laura Elizabeth"
     %meta{charset: "utf-8"}/
     %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
-    %meta{content: "Laurium Design", name: "description"}/
-    %meta{content: "laurium, design", name: "keywords"}/
-    %meta{content: "Laurium Design", name: "author"}/
-    %meta{content: "Laurium Design", name: "copyright"}/
+    %meta{content: "Laura Elizabeth", name: "description"}/
+    %meta{content: "laura, elizabeth", name: "keywords"}/
+    %meta{content: "Laura Elizabeth", name: "author"}/
+    %meta{content: "Laura Elizabeth", name: "copyright"}/
     %meta{content: "index, follow", name: "robots"}/
     %meta{content: "width=device-width, initial-scale=1.0, user-scalable=no", name: "viewport"}/
     %link{rel: "shortcut icon", href: "/images/favicon.ico"}
@@ -22,5 +22,5 @@
     = yield
     = partial("/partials/footer")
 
-    = javascript_include_tag "main"
     = partial("/partials/javascripts/bottom")
+    = javascript_include_tag "main"

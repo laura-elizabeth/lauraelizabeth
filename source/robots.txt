@@ -2,4 +2,4 @@
 # http://code.google.com/web/controlcrawlindex/
 
 User-agent: *
-Sitemap: http://www.laurium.co.uk/sitemap.xml
+Sitemap: http://www.lauraelizabeth.co/sitemap.xml
