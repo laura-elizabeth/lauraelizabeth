@@ -15,7 +15,7 @@ detectMobile= ->
     @isMobile = true
 
 initDribbbleFeed= ->
-  numberOfFeeds = if @isMobile then 3 else 8
+  numberOfFeeds = if @isMobile then 4 else 8
   $.jribbble.getShotsByPlayerId 'laurium', ((playerShots) ->
     html = []
     $.each playerShots.shots, (i, shot) ->
