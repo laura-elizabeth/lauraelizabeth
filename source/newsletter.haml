@@ -36,7 +36,13 @@ priority: "1"
           Sign up now and get access to my 5 day crash course on the foundations of designing for the web
     .row
       .col-md-3.col-md-offset-2
-        %img{src: "/images/newsletter/freebie.png", alt: "Freebie"}/
+        :plain
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="/images/newsletter/designing-interfaces.png, /images/newsletter/designing-interfaces@2x.png 2x" media="(min-width: 321px)">
+            <img srcset="/images/newsletter/designing-interfaces-mobile.png, /images/newsletter/designing-interfaces-mobile@2x.png 2x" alt="Designing Interfaces course">
+            <!--[if IE 9]></video><![endif]-->
+          </picture>
       .col-md-5
         %ul
           %li
