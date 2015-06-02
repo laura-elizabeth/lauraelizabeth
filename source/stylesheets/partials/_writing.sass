@@ -23,7 +23,11 @@ ul.articles
     h3
       margin: 0 0 10px
       a
-        &:link, &:visited, &:active, &:hover, &:focus
+        &:link, &:visited, &:active
           font-weight: 700
+          border-bottom: 2px solid $link-dark
+          padding-bottom: 2px
+        &:hover, &:focus
+          border-bottom: 2px solid $link-dark-hover
     p
       margin: 0
