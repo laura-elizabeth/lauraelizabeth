@@ -20,7 +20,8 @@
   %body{class: page_classes}
     = partial("/partials/header")
     = yield
-    = partial("/partials/footer")
+    - unless ["404/index.html"].include?(current_path)
+      = partial("/partials/footer")
 
     = partial("/partials/javascripts/bottom")
     = javascript_include_tag "main"
