@@ -58,7 +58,10 @@ priority: "1"
       .col-md-8.col-md-offset-2
         %h4
           Enter your name and email address below & look forward to plenty of design goodness every fortnight:
-        %form{action: "https://www.getdrip.com/forms/5969187/submissions", "data-drip-embedded-form" => "5969187", method: "post", target: "_blank"}
-          %input.first_name{name: "fields[first_name]", placeholder: "Your first name", type: "text", value: ""}/
-          %input.email{name: "fields[email]", placeholder: "Your best email address", type: "email", value: ""}/
-          %input.button{"data-drip-attribute" => "sign-up-button", name: "submit", type: "submit", value: "Sign Up & Get Your Freebie!"}/
+        %form.drip_form{data: {"campaign-id" => '9967536'}}
+          .column.column_first_name
+            %input.first_name{name: "fields[first_name]", placeholder: "Your first name", type: "text", value: ""}/
+          .column.column_email
+            %input.email{name: "fields[email]", placeholder: "Your best email address", type: "email", value: ""}/
+          .clear
+            %input.button{"data-drip-attribute" => "sign-up-button", name: "submit", type: "submit", value: "Sign Up & Get Your Freebie!"}/

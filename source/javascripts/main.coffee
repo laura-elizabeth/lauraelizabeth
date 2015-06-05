@@ -34,17 +34,13 @@ initDripForms= ->
   $('form.drip_form').on 'submit', (e)->
     e.preventDefault()
     form = $(@)
-
-    form.find('input.error').removeClass('error')
-    form.removeClass('error success')
-    # disable submit
-    form.find('input[type=submit]').prop('disabled', true)
+    onPressSubmitForm(form)
 
     options = {}
 
     if form.find('input.first_name').val() == ''
       onDripFormError form,
-        first_name: 'Need to be filled in'
+        first_name: 'Can I at least know your name?'
 
     else
       if _dcq?
@@ -64,17 +60,18 @@ initDripForms= ->
               else
                 onDripFormSuccess(form, options)
             error: (response)->
-              # nothing yet
+              # Nothing yet
           }
         ]
       else
         if form.find('input.email').val() == ''
           onDripFormError form,
-            email: 'Need to be filled in'
+            email: 'Please enter a valid email address'
         else
           onDripFormError form
 
 onDripFormSuccess= (form, options)->
+  console.log 'onDripFormSuccess', form, options
   form.addClass('success')
   # Enable button
   form.find('input[type=submit]').prop('disabled', false)
@@ -86,8 +83,22 @@ onDripFormError= (form, errors = {})->
   form.find('input[type=submit]').prop('disabled', false)
 
   if errors.email?
-    form.find('input.email').addClass('error')
+    input = form.find('input.email')
+    input.addClass('error')
+    input.after("<span class='error'>#{errors.email}</span>")
+
   if errors.first_name?
-    form.find('input.first_name').addClass('error')
+    input = form.find('input.first_name')
+    input.addClass('error')
+    input.after("<span class='error'>#{errors.first_name}</span>")
+
   # Do other things for error
   # for example: form.addClass('error')
+
+onPressSubmitForm= (form)->
+  form.find('input.error').removeClass('error')
+  form.removeClass('error success')
+  # Remove all error messages
+  form.find('span.error').remove()
+  # Disable submit
+  form.find('input[type=submit]').prop('disabled', true)

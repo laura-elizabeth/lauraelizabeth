@@ -13,29 +13,17 @@ form
     text-indent: 20px
     font-size: 15px
     border: 1px solid $form-input-border
+    width: 100%
     +appearance(none)
     box-sizing: border-box
-
-    &.first_name
-      width: 100%
-      float: left
-      margin-bottom: 20px
-      +min-width(560px)
-        max-width: 218px
-        margin-right: 20px
-
-    &.email
-      width: 100%
-      +min-width(560px)
-        width: calc(100% - 238px)
-
     &.button
+      clear: both
       height: 58px
       border: 0
       border-radius: 29px
       background-color: $button-bg
       color: $button-text
-      margin: 30px auto 0
+      margin: 0 auto
       width: 100%
       text-indent: 0
       display: block
@@ -44,3 +32,24 @@ form
       &:hover
         background-color: $button-bg-hover
         +transition(all 0.1s ease-in)
+    &.error
+      border: 1px solid $form-input-error-border
+
+  .column
+    float: left
+    margin-bottom: 20px
+    &.column_first_name
+      width: 100%
+      +min-width(560px)
+        width: 218px
+        margin-right: 20px
+    &.column_email
+      width: 100%
+      +min-width(560px)
+        width: calc(100% - 238px)
+    span.error
+      color: $form-error-text
+      font-size: 10px
+      line-height: 17px
+      font-style: italic
+      text-transform: capitalize
