@@ -40,7 +40,7 @@ initDripForms= ->
 
     if form.find('input.first_name').val() == ''
       onDripFormError form,
-        first_name: 'Can I at least know your name?'
+        first_name: 'can i at least know your name?'
 
     else
       if _dcq?
@@ -66,7 +66,7 @@ initDripForms= ->
       else
         if form.find('input.email').val() == ''
           onDripFormError form,
-            email: 'Please enter a valid email address'
+            email: 'please enter a valid email address'
         else
           onDripFormError form
 
