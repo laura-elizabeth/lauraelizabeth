@@ -5,6 +5,10 @@ input
 
 form
   margin-top: 20px
+  .feedback
+    display: none
+    text-align: center
+    margin: 60px auto
   input
     font-family: "Merriweather", sans-serif
     background-color: $form-input-bg
@@ -34,6 +38,11 @@ form
         +transition(all 0.1s ease-in)
     &.error
       border: 1px solid $form-input-error-border
+  &.success
+    input
+      display: none
+    .feedback
+      display: block
 
   .column
     float: left
