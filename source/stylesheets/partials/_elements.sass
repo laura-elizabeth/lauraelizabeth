@@ -133,6 +133,7 @@ small
     letter-spacing: 1px
 
 q
+  quotes: "“" "”"
   font-weight: 300
   font-style: italic
   font-size: 16px
@@ -144,6 +145,10 @@ q
     font-size: 20px
     line-height: 34px
     margin-top: 20px
+  &:before
+    content: open-quote
+  &:after
+    content: close-quote
 
 blockquote
   font-size: 18px
