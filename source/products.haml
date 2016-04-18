@@ -1,0 +1,65 @@
+---
+changefreq: "monthly"
+priority: "1"
+---
+
+%section
+  .container
+    .row
+      .col-md-8.col-md-offset-2
+        %h1
+          Sometimes, I like to
+          %span
+            make stuff.
+        %p.intro
+          Take a look at some of my projects below. Some are useful, others are utterly useless. But all are good fun.
+    .case-study
+      .row
+        .col-md-6.col-md-offset-1
+          %a{href: "http://www.designacademy.io"}
+            :plain
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="/images/products/design-academy.png, /images/products/design-academy@2x.png 2x" media="(min-width: 321px)">
+                <img srcset="/images/products/design-academy-mobile.png, /images/products/design-academy-mobile@2x.png 2x" alt="Design Academy">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
+        .col-md-4
+          .case-study-project
+            %small.project-header
+              Project
+            %p
+              Design Academy
+            %small.project-header
+              Author
+            %p
+              Laura Elizabeth
+          .case-study-details
+            %p
+              Design Academy <strike>is</strike> will be a free online course to help developers make their websites look as the code behind them.
+            %a{href: "http://www.designacademy.io"} Go to Design Academy
+    .case-study
+      .row
+        .col-md-6.col-md-offset-1
+          :plain
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/images/products/make-it-sew.png, /images/products/make-it-sew@2x.png 2x" media="(min-width: 321px)">
+              <img srcset="/images/products/make-it-sew-mobile.png, /images/products/make-it-sew-mobile@2x.png 2x" alt="Make it Sew">
+              <!--[if IE 9]></video><![endif]-->
+            </picture>
+        .col-md-4
+          .case-study-project
+            %small.project-header
+              Project
+            %p
+              Make it Sew
+            %small.project-header
+              Author
+            %p
+              Laura Elizabeth
+          .case-study-details
+            %p
+              A blog combining my love of crafts and cross stitch with Star Trek (and other delights).
+            %p.emphasis
+              Coming Soon!
