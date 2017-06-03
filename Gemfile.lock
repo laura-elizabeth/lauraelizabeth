@@ -140,3 +140,9 @@ DEPENDENCIES
   middleman-sprockets (= 3.3.2)
   puma
   rack-contrib
+
+RUBY VERSION
+   ruby 2.2.1p85
+
+BUNDLED WITH
+   1.15.1
